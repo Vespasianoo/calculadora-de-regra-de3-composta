@@ -3,6 +3,9 @@
 ![Preview da calculadora](https://github.com/Vespasianoo/calculadora-de-regra-de3-composta/blob/main/assets/preview.png)
 
 
+[Link do projeto](<https://vespasianoo.github.io/calculadora-de-regra-de3-composta/>)
+
+
 ### 🛠 Tecnologias
 
 * HTML
