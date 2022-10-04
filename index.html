@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Calculadora de Regra de três composta">
+    <meta name="keywords" content="calcular, Regra de três composta, matemática, calculadora">
+    <meta name="author" content="Matheus Vespasiano">
+    
+    <title>Calculadora - Regra de trés composta</title>
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <a href="assets/Regra de três composta - Calculadora.pdf" target="_blank" title="Como usar a calculadora" download="">
+            <svg enable-background="new 0 0 48 48" height="48px" id="Layer_1" version="1.1" viewBox="0 0 48 48" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_3"><g><path d="M23.262,30.516c-0.899,0-1.585,0.225-2.056,0.674c-0.471,0.451-0.707,1.115-0.707,1.994    c0,0.848,0.241,1.504,0.723,1.971c0.482,0.466,1.161,0.697,2.04,0.697c0.858,0,1.528-0.237,2.009-0.713    c0.481-0.478,0.723-1.129,0.723-1.955c0-0.857-0.238-1.518-0.715-1.979C24.803,30.745,24.131,30.516,23.262,30.516z" fill="#4b0082"/>
+            <path d="M29.329,13.703c-1.271-1.036-2.985-1.554-5.141-1.554c-2.616,0-5.092,0.654-7.425,1.962l1.711,3.438    c2.009-1.025,3.799-1.539,5.368-1.539c0.9,0,1.602,0.178,2.104,0.534c0.503,0.355,0.754,0.874,0.754,1.554    c0,0.607-0.176,1.156-0.525,1.648c-0.351,0.492-1.074,1.13-2.174,1.915c-1.141,0.837-1.926,1.627-2.354,2.37    c-0.43,0.742-0.644,1.617-0.644,2.621v1.162h4.159v-0.941c0-0.628,0.134-1.137,0.399-1.523c0.268-0.387,0.902-0.952,1.907-1.695    c1.466-1.046,2.459-1.988,2.982-2.826c0.522-0.838,0.784-1.832,0.784-2.982C31.236,16.12,30.602,14.738,29.329,13.703z" fill="#4b0082"/><path d="M24,0C10.745,0,0,10.745,0,24s10.745,24,24,24s24-10.745,24-24S37.255,0,24,0z M24,44    C12.954,44,4,35.046,4,24C4,12.955,12.954,4,24,4s20,8.955,20,20C44,35.046,35.046,44,24,44z" fill="#4b0082"/></g></g>
+            </svg>
+        </a>
+
+        <form>
+            <div class="containar__form" id="input-container">
+                <div class="container__form__group" >
+                    <h1>Calculadora - Regra de três composta</h1>
+
+                    <div class="container__form_input-box">
+                        <input type="number" id="valor1" placeholder="Digite o primeiro valor do (Processo)">
+                    </div>
+
+                    <div class="container__form_input-box">
+                        <input type="number"id="valor2" placeholder="Digite o segundo valor do (Processo)">
+                    </div>
+
+                    <div class="container__form_input-box">
+                        <input type="number"id="valor3" placeholder="Digite o terceiro valor do (Processo)">
+                    </div>
+
+                    <div class="container__form_input-box">
+                        <input type="number"id="produto1" placeholder="Digite o primeiro valor do (Produto)">
+                    </div>
+
+                    <div class="container__form_input-box">
+                        <input type="number"id="produto2" placeholder="Digite o segundo valor do (Produto)">
+                    </div>
+
+                    <div class="btn">
+                        <button class="btn-submit" id="get" onclick="pegarDados()" >Enviar</button>
+                        <button class="limpar" type="reset" >Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="container__table hide " id="container-table">
+            <div class="table " id="hideTable">
+                <table>
+                    <tr>
+                      <th colspan="2">Variável</th>
+                      <th>Produto</th>
+                    </tr>
+                    <tr>
+                      <td class="tableValor1" id="tableValor1">valor1</td>
+                      <td class="tableValor2" id="tableValor2">valor2</td>
+                      <td class="tableProduto1" id="tableProduto1">valor3</td>
+                    </tr>
+                      <tr>
+                      <td>incógnita </td>
+                      <td class="tableProduto2" id="tableProduto2">valor5</td>
+                      <td class="tableValor3" id="tableValor3">valor4</td>
+                    </tr>
+                  </table>
+                <div class="btn table-btn">
+                    <button class="btn-submit" onclick="Calcular()">Calcular incógnita</button>
+                    <button  class="limpar" onclick="Voltar()">Voltar</button>
+                </div>
+                <h3 id="resultado"></h3>
+            </div> 
+        </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
