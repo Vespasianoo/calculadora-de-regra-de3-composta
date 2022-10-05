@@ -6,10 +6,11 @@
     --color-purple1: #9333FF;
     --color-purple2: #4b0082;
 
-    
+    font-size: 62.5%;  /* 1rem = 10px */
 }
 
 body {
+    font-size: 1.6rem;
     width: 100%;
     height: 100vh;
     background-color: var(--color-dark1);
@@ -35,40 +36,40 @@ a svg {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px;
-    width: 48px;
-    height: 48px;
+    padding: 1rem;
+    width: 4.8rem;
+    height: 4.8rem;
 }
 
 .container__form__group {
-    height: 360px;
+    height: 36rem;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
 }
 
 .container__form__group {
     background-color: var(--color-dark2);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 1rem;
+    padding: 2rem;
     height: 100%;
-    max-width: 340px;
+    max-width: 34rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 .container__form_input-box input {
     outline: none;
-    padding: 8px 5px;
+    padding: .8rem .5rem;
     width: 100%;
-    height: 30px;
+    height: 3rem;
     color: var(--color-white);
     background-color: var(--color-dark1);
-    border: 2px solid var(--color-dark1);
-    border-radius: 5px;
+    border: .2rem solid var(--color-dark1);
+    border-radius: .5rem;
     transition: border-color .3s; 
 }
 
@@ -79,18 +80,18 @@ input:focus {
 .btn {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 button {
     width: 100%;
-    height: 30px;
+    height: 3rem;
   
     outline: none;
     border: none;
     color: var(--color-white);
   
-    border-radius: 5px;
+    border-radius: .5rem;
   
     cursor: pointer;
   
@@ -115,12 +116,12 @@ button.limpar:hover {
 }
 
 .container__table {
-    max-width: 340px;
-    height: 300px;
+    max-width: 34rem;
+    height: 30rem;
     position: absolute;
     background-color: var(--color-dark2);
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     text-align: center;
 }
 
@@ -131,25 +132,25 @@ button.limpar:hover {
 }
 
 table, th,td {
-  border: 1px solid var(--color-white);
+  border: .1rem solid var(--color-white);
   border-collapse: collapse;
 }
 
 th,td {
-  padding: 10px;
+  padding: 1rem;
 }
 
 table {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
 }
 
 .table-btn {
     display: flex;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 h3 {
     text-align: center;
-    margin-top: 16px;
+    margin-top: 1.6rem;
 }
